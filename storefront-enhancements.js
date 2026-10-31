@@ -1119,4 +1119,125 @@
   `;
   document.head.appendChild(styleEl);
 
+
+
+  /* ==========================================================================
+     UNIFIED MOBILE NAVIGATION DRAWER & HEADER LOGIC (< 990px)
+     Matches https://nike-makknzjs.myshopify.com/
+     ========================================================================== */
+  function initUnifiedMobileNav() {
+    // 1. Hide unwanted duplicate elements on mobile
+    const extraLogos = document.querySelectorAll('.header-logo, .search-action--hidden-on-menu');
+    extraLogos.forEach(el => {
+      el.style.setProperty('display', 'none', 'important');
+    });
+
+    // 2. Locate right header actions to place Hamburger Toggle
+    const headerRight = document.querySelector('.header__column--right') ||
+                        document.querySelector('.header-actions');
+    if (!headerRight) return;
+
+    // Check if toggle button already exists
+    let toggleBtn = document.querySelector('.mobile-nav-toggle');
+    if (!toggleBtn) {
+      toggleBtn = document.createElement('button');
+      toggleBtn.type = 'button';
+      toggleBtn.className = 'mobile-nav-toggle';
+      toggleBtn.setAttribute('aria-label', 'Open navigation menu');
+      toggleBtn.innerHTML = `
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 3.5H13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+          <path d="M1 10.5H13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+        </svg>
+      `;
+      headerRight.appendChild(toggleBtn);
+    }
+
+    // Hide any summary in left column so it doesn't duplicate
+    const leftSummary = document.querySelector('.header__column--left summary.header__icon--menu');
+    if (leftSummary) {
+      leftSummary.style.setProperty('display', 'none', 'important');
+    }
+
+    // 3. Create or bind Unified Mobile Drawer
+    let drawer = document.getElementById('unifiedMobileDrawer');
+    let overlay = document.getElementById('unifiedMobileOverlay');
+
+    if (!drawer) {
+      drawer = document.createElement('div');
+      drawer.id = 'unifiedMobileDrawer';
+      drawer.className = 'mobile-nav-drawer';
+      drawer.innerHTML = `
+        <button type="button" class="mobile-nav-close" aria-label="Close menu">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.75 3.75L10.25 10.25M10.25 3.75L3.75 10.25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <ul class="mobile-nav-links" role="list">
+          <li><a href="/" class="mobile-nav-link">Home</a></li>
+          <li><a href="/#so-template--27695055274289__shoe_orbit_WizENf" class="mobile-nav-link" data-target="so-template--27695055274289__shoe_orbit_WizENf">Nike Orbit</a></li>
+          <li><a href="/#rk-template--27695055274289__rack_showcase_rWz8Dr" class="mobile-nav-link" data-target="rk-template--27695055274289__rack_showcase_rWz8Dr">Hand Rail Pro</a></li>
+          <li><a href="/#shopify-section-template--27695055274289__the_runway_gwqgXR" class="mobile-nav-link" data-target="shopify-section-template--27695055274289__the_runway_gwqgXR">Runway</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <a href="#" onclick="alert('Sign in functionality'); return false;">Log in</a>
+        </div>
+      `;
+      document.body.appendChild(drawer);
+
+      overlay = document.createElement('div');
+      overlay.id = 'unifiedMobileOverlay';
+      overlay.className = 'mobile-nav-overlay';
+      document.body.appendChild(overlay);
+
+      // Event handlers for open/close
+      const openDrawer = () => {
+        drawer.classList.add('is-open');
+        overlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeDrawer = () => {
+        drawer.classList.remove('is-open');
+        overlay.classList.remove('is-open');
+        document.body.style.overflow = '';
+      };
+
+      toggleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openDrawer();
+      });
+
+      drawer.querySelector('.mobile-nav-close').addEventListener('click', (e) => {
+        e.preventDefault();
+        closeDrawer();
+      });
+
+      overlay.addEventListener('click', closeDrawer);
+
+      // Link clicks
+      drawer.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          const targetId = link.getAttribute('data-target');
+          closeDrawer();
+          if (targetId && document.getElementById(targetId)) {
+            e.preventDefault();
+            const el = document.getElementById(targetId);
+            if (el) {
+              const y = el.getBoundingClientRect().top + window.pageYOffset - 60;
+              window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+          }
+        });
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initUnifiedMobileNav);
+  } else {
+    initUnifiedMobileNav();
+  }
+
 })();

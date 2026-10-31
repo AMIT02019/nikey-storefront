@@ -3816,3 +3816,581 @@ mobile-shop-stories, .mobile-stories-section { display: none !important; }
     justify-content: flex-start !important;
   }
 }
+
+
+/* ==========================================================================
+   COMPLETE PHONE / MOBILE VIEWPORT OPTIMIZATION (< 990px)
+   Ground-truthed against https://nike-makknzjs.myshopify.com/
+   ========================================================================== */
+
+/* 1. Header & Navigation on Mobile */
+@media screen and (max-width: 989px) {
+  .section-utility-bar,
+  .utility-bar,
+  .header-utility-bar,
+  .top_info_bar,
+  [id*="top_info_bar"] {
+    display: none !important;
+  }
+
+  .header-section,
+  #shopify-section-sections--27695055405361__header_section {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: #ffffff !important;
+  }
+
+  .header__columns {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 60px !important;
+    padding: 0 16px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .header__column--left {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .header__column--left .nikey-brand-logo img {
+    height: 24px !important;
+    width: auto !important;
+  }
+
+  .header__column--center,
+  header-menu,
+  .header-menu,
+  .menu-list,
+  overflow-list,
+  .overflow-menu {
+    display: none !important;
+  }
+
+  .header__column--right {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 12px !important;
+  }
+
+  .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .search-pill-label {
+    display: none !important;
+  }
+
+  .search-pill-button {
+    padding: 6px !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 50% !important;
+    color: #111 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .header-actions__account-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #111 !important;
+  }
+
+  /* Hamburger Toggle on Mobile */
+  .mobile-nav-toggle {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    color: #111 !important;
+    padding: 0 !important;
+  }
+}
+
+/* 2. Global Mobile Navigation Drawer (< 990px) */
+.mobile-nav-drawer {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 300px !important;
+  max-width: 85vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  background: #ffffff !important;
+  z-index: 100000 !important;
+  box-shadow: 20px 0 60px rgba(0, 0, 0, 0.18) !important;
+  transform: translateX(-105%) !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 32px 28px !important;
+  box-sizing: border-box !important;
+}
+
+.mobile-nav-drawer.is-open {
+  transform: translateX(0) !important;
+}
+
+.mobile-nav-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  z-index: 99999 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.mobile-nav-overlay.is-open {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.mobile-nav-close {
+  align-self: flex-start !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  color: #111 !important;
+  margin-bottom: 32px !important;
+  padding: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.mobile-nav-links {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+
+.mobile-nav-links a {
+  color: #111111 !important;
+  text-decoration: none !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.4px !important;
+  display: block !important;
+  padding: 6px 0 !important;
+  transition: color 0.2s ease !important;
+}
+
+.mobile-nav-links a:hover {
+  color: #888888 !important;
+}
+
+.mobile-nav-footer {
+  margin-top: auto !important;
+  padding-top: 24px !important;
+  border-top: 1px solid #eee !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  font-size: 14px !important;
+  color: #666 !important;
+}
+
+.mobile-nav-footer a {
+  color: #444 !important;
+  text-decoration: none !important;
+}
+
+@media screen and (min-width: 990px) {
+  .mobile-nav-toggle,
+  .mobile-nav-drawer,
+  .mobile-nav-overlay {
+    display: none !important;
+  }
+}
+
+/* 3. Hand Rail Pro (Rack Showcase) on Mobile (< 750px) */
+@media screen and (max-width: 749.98px) {
+  .rk-sec {
+    padding: 32px 0 48px !important;
+    overflow: hidden !important;
+    max-width: 100vw !important;
+  }
+
+  .rk-stage {
+    padding-top: 8px !important;
+    width: 100% !important;
+  }
+
+  .rk-rack {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 14px !important;
+    padding: 0 16px !important;
+    scrollbar-width: none !important;
+    justify-content: flex-start !important;
+  }
+
+  .rk-rack::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .rk-item {
+    flex: 0 0 100px !important;
+    width: 100px !important;
+    min-width: 100px !important;
+    scroll-snap-align: center !important;
+    margin: 0 !important;
+  }
+
+  .rk-item .rk-garment {
+    width: 100% !important;
+  }
+
+  .rk-dots {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    margin-top: 16px !important;
+  }
+
+  .rk-dot {
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 50% !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .rk-dot-on {
+    width: 24px !important;
+    border-radius: 4px !important;
+    background: #000000 !important;
+  }
+}
+
+/* 4. The Runway ("Try the Look") on Mobile (< 750px) */
+@media screen and (max-width: 749.98px) {
+  .section-the-runway .rw__grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  .section-the-runway .rw__left {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+  .section-the-runway .rw__stage {
+    width: 100% !important;
+    height: 480px !important;
+    min-height: 480px !important;
+    position: relative !important;
+  }
+
+  .section-the-runway .rw__panel {
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    border-left: none !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
+    padding: 20px 16px 36px !important;
+  }
+
+  .section-the-runway .rw__panel-head {
+    display: none !important;
+  }
+
+  .section-the-runway .rw__mhead {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 14px !important;
+  }
+
+  .section-the-runway .rw__mhead-title {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+  }
+
+  .section-the-runway .rw__items {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 12px !important;
+    padding: 0 0 16px !important;
+    margin: 0 !important;
+    scrollbar-width: none !important;
+  }
+
+  .section-the-runway .rw__items::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .section-the-runway .rw__item {
+    flex: 0 0 220px !important;
+    width: 220px !important;
+    min-width: 220px !important;
+    scroll-snap-align: start !important;
+    background: #fbfbfb !important;
+    border: 1px solid #ededed !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .section-the-runway .rw__bundle-btn,
+  .section-the-runway .rw__panel-foot button,
+  .section-the-runway .rw__foot button {
+    width: 100% !important;
+    background: #000000 !important;
+    color: #ffffff !important;
+    padding: 16px 20px !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    text-transform: none !important;
+    letter-spacing: 0.3px !important;
+    margin-top: 14px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* 5. Product Detail Pages (PDP) Mobile Excellence (< 750px) */
+@media screen and (max-width: 749.98px) {
+  .pdp-container {
+    padding: 16px !important;
+  }
+
+  .pdp-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .pdp-main-image-wrap {
+    height: 380px !important;
+    border-radius: 16px !important;
+  }
+
+  .pdp-main-image {
+    max-height: 85% !important;
+    max-width: 85% !important;
+  }
+
+  .pdp-thumbnails {
+    gap: 8px !important;
+    margin-top: 12px !important;
+  }
+
+  .pdp-thumb {
+    width: 64px !important;
+    height: 64px !important;
+    border-radius: 8px !important;
+  }
+
+  .pdp-title {
+    font-size: 26px !important;
+    letter-spacing: -0.5px !important;
+  }
+
+  .pdp-price {
+    font-size: 22px !important;
+  }
+
+  .pdp-size-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .pdp-size-btn {
+    border: 1px solid #111111 !important;
+    border-radius: 2px !important;
+    padding: 12px 0 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  .pdp-size-btn.active {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+  }
+
+  .pdp-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .pdp-add-btn,
+  .pdp-buy-now {
+    height: 52px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    border-radius: 4px !important;
+  }
+
+  .pdp-related {
+    margin-top: 48px !important;
+    padding-top: 32px !important;
+  }
+
+  .pdp-related-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .pdp-card-img-wrap {
+    height: 160px !important;
+    padding: 10px !important;
+  }
+
+  .pdp-card-content {
+    padding: 12px 10px !important;
+  }
+
+  .pdp-card-title {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .pdp-card-price {
+    font-size: 13px !important;
+    margin-top: 4px !important;
+  }
+
+  /* Editorial Accordions on PDP */
+  .pdp-accordion-group {
+    border-top: 1px solid #e5e5e5 !important;
+    margin-top: 24px !important;
+  }
+
+  .pdp-accordion-item {
+    border-bottom: 1px solid #e5e5e5 !important;
+  }
+
+  .pdp-accordion-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 16px 0 !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #111 !important;
+  }
+
+  .pdp-accordion-body {
+    padding-bottom: 16px !important;
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+    color: #555 !important;
+  }
+}
+
+
+/* ==========================================================================
+   PRODUCT ACCORDION STYLES & ICON TOGGLE
+   ========================================================================== */
+.pdp-accordion-group {
+  border-top: 1px solid #e5e5e5 !important;
+  margin-top: 24px !important;
+}
+
+.pdp-accordion-item {
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.pdp-accordion-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 16px 0 !important;
+  cursor: pointer !important;
+  font-size: 14.5px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  user-select: none !important;
+  list-style: none !important;
+}
+
+.pdp-accordion-header::-webkit-details-marker {
+  display: none !important;
+}
+
+.pdp-accordion-icon {
+  position: relative !important;
+  width: 14px !important;
+  height: 14px !important;
+  display: inline-block !important;
+}
+
+.pdp-accordion-icon::before,
+.pdp-accordion-icon::after {
+  content: '' !important;
+  position: absolute !important;
+  background-color: #111 !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  transition: transform 0.2s ease, opacity 0.2s ease !important;
+}
+
+.pdp-accordion-icon::before {
+  width: 12px !important;
+  height: 1.5px !important;
+}
+
+.pdp-accordion-icon::after {
+  width: 1.5px !important;
+  height: 12px !important;
+}
+
+.pdp-accordion-item[open] .pdp-accordion-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg) !important;
+  opacity: 0 !important;
+}
+
+.pdp-accordion-body {
+  padding-bottom: 16px !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #555 !important;
+}
