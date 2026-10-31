@@ -1081,15 +1081,19 @@
     // 6. Runway Look pins (.rw__pin)
     const rwPin = e.target.closest('.rw__pin');
     if (rwPin) {
-      const tip = rwPin.getAttribute('data-tip') || rwPin.getAttribute('aria-label');
-      const targetUrl = resolveProductUrl(tip);
-      if (targetUrl) {
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        window.location.href = targetUrl;
-        return;
+      // Allow single click/tap to sync with Runway sidebar (hot)
+      if (e.detail >= 2) {
+        const tip = rwPin.getAttribute('data-tip') || rwPin.getAttribute('aria-label');
+        const targetUrl = resolveProductUrl(tip);
+        if (targetUrl) {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+          window.location.href = targetUrl;
+          return;
+        }
       }
+      return;
     }
   }, { capture: true });
 
