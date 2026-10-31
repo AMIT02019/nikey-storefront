@@ -15,48 +15,48 @@ body{--header-height: 60px;--header-group-height: var(--header-height);--transpa
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n6.771af0474a71b3797eb38f3487d6fb79d43b6877.woff2") format("woff2"),
-       url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n6.88c903d8f9e157d48b73b7777d0642925bcecde7.woff") format("woff");
+  src: url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n6.771af0474a71b3797eb38f3487d6fb79d43b6877.woff2") format("woff2"),
+       url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n6.88c903d8f9e157d48b73b7777d0642925bcecde7.woff") format("woff");
 }
 @font-face {
   font-family: Inter;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n7.02711e6b374660cfc7915d1afc1c204e633421e4.woff2") format("woff2"),
-       url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n7.6dab87426f6b8813070abd79972ceaf2f8d3b012.woff") format("woff");
+  src: url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n7.02711e6b374660cfc7915d1afc1c204e633421e4.woff2") format("woff2"),
+       url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n7.6dab87426f6b8813070abd79972ceaf2f8d3b012.woff") format("woff");
 }
 @font-face {
   font-family: Inter;
   font-weight: 600;
   font-style: italic;
   font-display: swap;
-  src: url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i6.3bbe0fe1c7ee4f282f9c2e296f3e4401a48cbe19.woff2") format("woff2"),
-       url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i6.8bea21f57a10d5416ddf685e2c91682ec237876d.woff") format("woff");
+  src: url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i6.3bbe0fe1c7ee4f282f9c2e296f3e4401a48cbe19.woff2") format("woff2"),
+       url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i6.8bea21f57a10d5416ddf685e2c91682ec237876d.woff") format("woff");
 }
 @font-face {
   font-family: Inter;
   font-weight: 700;
   font-style: italic;
   font-display: swap;
-  src: url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i7.b377bcd4cc0f160622a22d638ae7e2cd9b86ea4c.woff2") format("woff2"),
-       url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i7.7c69a6a34e3bb44fcf6f975857e13b9a9b25beb4.woff") format("woff");
+  src: url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i7.b377bcd4cc0f160622a22d638ae7e2cd9b86ea4c.woff2") format("woff2"),
+       url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i7.7c69a6a34e3bb44fcf6f975857e13b9a9b25beb4.woff") format("woff");
 }
 @font-face {
   font-family: Inter;
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-  src: url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n8.d15c916037fee1656886aab64725534609d62cc8.woff2") format("woff2"),
-       url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n8.c88637171fecf10ab2d88c89dbf06f41a1ae8be5.woff") format("woff");
+  src: url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n8.d15c916037fee1656886aab64725534609d62cc8.woff2") format("woff2"),
+       url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_n8.c88637171fecf10ab2d88c89dbf06f41a1ae8be5.woff") format("woff");
 }
 @font-face {
   font-family: Inter;
   font-weight: 800;
   font-style: italic;
   font-display: swap;
-  src: url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i8.43b36d1ed012e0be95ad40ae98653a2b7e349b3b.woff2") format("woff2"),
-       url("//nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i8.29421c96cbf447cbe238e558a27b1cb27b01b743.woff") format("woff");
+  src: url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i8.43b36d1ed012e0be95ad40ae98653a2b7e349b3b.woff2") format("woff2"),
+       url("https://nike-makknzjs.myshopify.com/cdn/fonts/inter/inter_i8.29421c96cbf447cbe238e558a27b1cb27b01b743.woff") format("woff");
 }
 
 
@@ -3457,8 +3457,8 @@ html.so-lock, html.so-lock body { overflow: hidden; }
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("//nike-makknzjs.myshopify.com/cdn/fonts/instrument_serif/instrumentserif_n4.1f296bfb073af186bc0a0abe7791aa71e0f0fd99.woff2") format("woff2"),
-       url("//nike-makknzjs.myshopify.com/cdn/fonts/instrument_serif/instrumentserif_n4.9c1bc0cbb666f794ccbef0784eef2fae0981ce72.woff") format("woff");
+  src: url("https://nike-makknzjs.myshopify.com/cdn/fonts/instrument_serif/instrumentserif_n4.1f296bfb073af186bc0a0abe7791aa71e0f0fd99.woff2") format("woff2"),
+       url("https://nike-makknzjs.myshopify.com/cdn/fonts/instrument_serif/instrumentserif_n4.9c1bc0cbb666f794ccbef0784eef2fae0981ce72.woff") format("woff");
 }
 
 

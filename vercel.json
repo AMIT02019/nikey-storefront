@@ -31,10 +31,6 @@
       "destination": "/index.html"
     },
     {
-      "source": "/products/(.*)",
-      "destination": "/index.html"
-    },
-    {
       "source": "/collections/(.*)",
       "destination": "/index.html"
     }
