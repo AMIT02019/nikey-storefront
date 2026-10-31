@@ -841,7 +841,7 @@
     });
 
     // Close Button Handlers
-    document.querySelectorAll('.theme-drawer__close-button, [on\:click="#cart-drawer/close"]').forEach(btn => {
+    document.querySelectorAll('.theme-drawer__close-button, [data-action="close"], .cart-drawer__close-button, button[aria-label="Close"]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
         closeCartDrawer();
