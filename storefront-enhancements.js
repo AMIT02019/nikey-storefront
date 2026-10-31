@@ -858,7 +858,7 @@
 
     // Navigation Smooth Scrolling
     const NAV_MAP = {
-      'home': '#shopify-section-template--27695055274289__mobile_stories_WtmfHD',
+      'home': '#sr-template--27695055274289__scene_rail_redGmm',
       'nike orbit': '#so-template--27695055274289__shoe_orbit_WizENf',
       'hand rail pro': '#sr-template--27695055274289__scene_rail_redGmm',
       'runway': '#shopify-section-template--27695055274289__the_runway_gwqgXR'

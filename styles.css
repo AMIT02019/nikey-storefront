@@ -3701,13 +3701,7 @@ header-actions,
 }
 
 /* 3. Mobile Stories Display on Desktop & Touch */
-mobile-shop-stories {
-  display: block !important;
-  padding: 20px 0 !important;
-  background: #0d0d0d !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-  width: 100% !important;
-}
+mobile-shop-stories, .mobile-stories-section { display: none !important; }
 
 .st-row {
   display: flex !important;

@@ -3,7 +3,7 @@
 [![Vercel Deployment](https://img.shields.io/badge/Deployed%20with-Vercel-black?style=for-the-badge&logo=vercel)](https://nikey-storefront.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/AMIT02019/nikey-storefront)
 
-A high-performance, dark-minimalist, brutalist luxury streetwear e-commerce experience inspired by modern digital flagship stores. Re-engineered from the Nikey Shopify storefront into an ultra-fast, zero-dependency standalone web application with physics-based 3D interactions, rotational shoe orbit views, interactive runway lookbooks, mobile story reels, and an integrated client-side bag drawer.
+A high-performance, dark-minimalist, brutalist luxury streetwear e-commerce experience inspired by modern digital flagship stores. Re-engineered from the Nikey Shopify storefront into an ultra-fast, zero-dependency standalone web application with physics-based 3D interactions, rotational shoe orbit views, interactive runway lookbooks, and an integrated client-side bag drawer.
 
 - **Live URL**: [https://nikey-storefront.vercel.app](https://nikey-storefront.vercel.app)
 - **Alternative URL**: [https://nikey-concept.vercel.app](https://nikey-concept.vercel.app)
@@ -24,8 +24,6 @@ A high-performance, dark-minimalist, brutalist luxury streetwear e-commerce expe
 
 1. **Header & Navigation Drawer**
    - Brand typography with interactive search modal, bag count indicator with live reactive badge, and smooth anchor routing to each showcase zone.
-2. **Mobile Stories (`mobile-shop-stories`)**
-   - Instagram/TikTok-inspired reel cards with tap-to-view video previews, like counts, progress bars, and one-tap "Add to Bag".
 3. **Scene Rail (`scene-rail` / Hand Rail Pro)**
    - Interactive horizontal streetwear rail featuring high-resolution transparent apparel renders with hover rotation, spring physics, and quick inspection.
 4. **Rack Showcase (`rack-showcase`)**
