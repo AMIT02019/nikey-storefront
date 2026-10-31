@@ -803,7 +803,7 @@
         id: bodyData.id || prod.id,
         product_id: prod.id,
         title: prod.title,
-        variant_title: selectedOption,
+        variant_title: bodyData.variant_title || selectedOption,
         price: prod.price,
         quantity: Number(bodyData.quantity || 1),
         image: prod.image || './assets/images/asset_008_2d791642cbe6.png'
