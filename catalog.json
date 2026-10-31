@@ -1,0 +1,473 @@
+{
+  "10893259735345": {
+    "id": 10893259735345,
+    "title": "Luka 5",
+    "handle": "air-jordan-12-retro-copy",
+    "price": 149.0,
+    "formatted_price": "$149.00",
+    "image": "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/4.png?v=1792493527",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/4.png?v=1792493527",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/7.png?v=1792493527",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/8.png?v=1792493527"
+    ],
+    "options": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "variants": [
+      {
+        "id": 57015176364337,
+        "title": "40",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015176397105,
+        "title": "41",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015176429873,
+        "title": "42",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015176462641,
+        "title": "43",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015176495409,
+        "title": "44",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015176528177,
+        "title": "45",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015176560945,
+        "title": "46",
+        "price": 149.0,
+        "available": true
+      }
+    ]
+  },
+  "10893258457393": {
+    "id": 10893258457393,
+    "title": "Air Jordan 12 Retro",
+    "handle": "tatum-5-orbit-copy",
+    "price": 149.0,
+    "formatted_price": "$149.00",
+    "image": "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/7.png?v=1792493527",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/8.png?v=1792493527",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/9.png?v=1792493528"
+    ],
+    "options": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "variants": [
+      {
+        "id": 57015167025457,
+        "title": "40",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015167058225,
+        "title": "41",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015167090993,
+        "title": "42",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015167123761,
+        "title": "43",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015167156529,
+        "title": "44",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015167189297,
+        "title": "45",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015167222065,
+        "title": "46",
+        "price": 149.0,
+        "available": true
+      }
+    ]
+  },
+  "10893258359089": {
+    "id": 10893258359089,
+    "title": "Tatum 5 Orbit",
+    "handle": "tatum-5-orbit",
+    "price": 149.0,
+    "formatted_price": "$149.00",
+    "image": "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/1.png?v=1792493527",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/1.png?v=1792493527",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/7.png?v=1792493527",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/8.png?v=1792493527",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/9.png?v=1792493528"
+    ],
+    "options": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+    ],
+    "variants": [
+      {
+        "id": 57015166730545,
+        "title": "40",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015166763313,
+        "title": "41",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015166796081,
+        "title": "42",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015166828849,
+        "title": "43",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015166861617,
+        "title": "44",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015166894385,
+        "title": "45",
+        "price": 149.0,
+        "available": true
+      },
+      {
+        "id": 57015166927153,
+        "title": "46",
+        "price": 149.0,
+        "available": true
+      }
+    ]
+  },
+  "10883683352881": {
+    "id": 10883683352881,
+    "title": "Hoodie Black",
+    "handle": "hoodie-black",
+    "price": 199.0,
+    "formatted_price": "$199.00",
+    "image": "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071101472773.webp?v=1792065527",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071101472773.webp?v=1792065527",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071101516777.webp?v=1792065529",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071101430110.webp?v=1792065524"
+    ],
+    "options": [
+      "S",
+      "L",
+      "M",
+      "XL"
+    ],
+    "variants": [
+      {
+        "id": 56836251681073,
+        "title": "S",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56836251713841,
+        "title": "L",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56836251746609,
+        "title": "M",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56836251779377,
+        "title": "XL",
+        "price": 199.0,
+        "available": true
+      }
+    ]
+  },
+  "10883680895281": {
+    "id": 10883680895281,
+    "title": "Sweatshirt Plus",
+    "handle": "sweatshirt-plus",
+    "price": 199.0,
+    "formatted_price": "$199.00",
+    "image": "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071516592552.webp?v=1792065999",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071516592552.webp?v=1792065999",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071517049148.webp?v=1792066000",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071517017451.webp?v=1792065997"
+    ],
+    "options": [
+      "S",
+      "L",
+      "M",
+      "XL"
+    ],
+    "variants": [
+      {
+        "id": 56836143743281,
+        "title": "S",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56836143776049,
+        "title": "L",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56836143808817,
+        "title": "M",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56836143841585,
+        "title": "XL",
+        "price": 199.0,
+        "available": true
+      }
+    ]
+  },
+  "10883676602673": {
+    "id": 10883676602673,
+    "title": "Hoodie",
+    "handle": "hoodie",
+    "price": 199.0,
+    "formatted_price": "$199.00",
+    "image": "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071514403809.webp?v=1792065704",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071514403809.webp?v=1792065704",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071514447647.webp?v=1792065701",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071514388245.webp?v=1792065705"
+    ],
+    "options": [
+      "S",
+      "L",
+      "M",
+      "XL"
+    ],
+    "variants": [
+      {
+        "id": 56836002185521,
+        "title": "S",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56836002218289,
+        "title": "L",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56836002251057,
+        "title": "M",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56836002283825,
+        "title": "XL",
+        "price": 199.0,
+        "available": true
+      }
+    ]
+  },
+  "10883673653553": {
+    "id": 10883673653553,
+    "title": "Tshirt",
+    "handle": "tshirt",
+    "price": 199.0,
+    "formatted_price": "$199.00",
+    "image": "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071515314737.webp?v=1792065932",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071515314737.webp?v=1792065932",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071516549024.webp?v=1792065933",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071515554298.webp?v=1792065930"
+    ],
+    "options": [
+      "S",
+      "L",
+      "M",
+      "XL"
+    ],
+    "variants": [
+      {
+        "id": 56835911582001,
+        "title": "S",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56835911614769,
+        "title": "L",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56835911647537,
+        "title": "M",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56835911680305,
+        "title": "XL",
+        "price": 199.0,
+        "available": true
+      }
+    ]
+  },
+  "10883670835505": {
+    "id": 10883670835505,
+    "title": "Sweatshirt",
+    "handle": "sweatshirt",
+    "price": 199.0,
+    "formatted_price": "$199.00",
+    "image": "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071517318112.webp?v=1792066085",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071517318112.webp?v=1792066085",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071517384792.webp?v=1792066083",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071517292954.webp?v=1792066088"
+    ],
+    "options": [
+      "S",
+      "L",
+      "M",
+      "XL"
+    ],
+    "variants": [
+      {
+        "id": 56835806396721,
+        "title": "S",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56835806429489,
+        "title": "L",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56835806462257,
+        "title": "M",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56835806495025,
+        "title": "XL",
+        "price": 199.0,
+        "available": true
+      }
+    ]
+  },
+  "10883669492017": {
+    "id": 10883669492017,
+    "title": "Blazzer",
+    "handle": "blazzer",
+    "price": 199.0,
+    "formatted_price": "$199.00",
+    "image": "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071514560224.webp?v=1792065608",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071514560224.webp?v=1792065608",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071515248388.webp?v=1792065611",
+      "https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071514492742.webp?v=1792065606"
+    ],
+    "options": [
+      "S",
+      "L",
+      "M",
+      "XL"
+    ],
+    "variants": [
+      {
+        "id": 56835765993777,
+        "title": "S",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56835766026545,
+        "title": "L",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56835766059313,
+        "title": "M",
+        "price": 199.0,
+        "available": true
+      },
+      {
+        "id": 56835766092081,
+        "title": "XL",
+        "price": 199.0,
+        "available": true
+      }
+    ]
+  }
+}
