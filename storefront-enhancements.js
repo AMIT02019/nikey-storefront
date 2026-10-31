@@ -949,4 +949,170 @@
       });
     }
   });
+
+  // ==========================================
+  // 6. Interactive Product Click Interceptor
+  // ==========================================
+  const PRODUCT_URL_MAP = {
+    'blazzer': '/products/blazzer',
+    'hoodie': '/products/hoodie',
+    'hoodie black': '/products/hoodie-black',
+    'sweatshirt': '/products/sweatshirt',
+    'sweatshirt plus': '/products/sweatshirt-plus',
+    'tshirt': '/products/tshirt',
+    't-shirt': '/products/tshirt',
+    'luka 5': '/products/luka-5',
+    'air jordan 12 retro': '/products/air-jordan-12-retro',
+    'tatum 5 orbit': '/products/tatum-5-orbit',
+    'air-jordan-12-retro-copy': '/products/air-jordan-12-retro-copy',
+    'tatum-5-orbit-copy': '/products/tatum-5-orbit-copy'
+  };
+
+  function resolveProductUrl(raw) {
+    if (!raw) return null;
+    const clean = String(raw).trim().toLowerCase().replace(/['"]/g, '');
+    if (clean.startsWith('/products/')) return clean;
+    if (PRODUCT_URL_MAP[clean]) return PRODUCT_URL_MAP[clean];
+    for (const [k, v] of Object.entries(PRODUCT_URL_MAP)) {
+      if (clean === k || clean.includes(k) || k.includes(clean)) return v;
+    }
+    return null;
+  }
+
+  let pointerStartX = 0;
+  let pointerStartY = 0;
+  let isDragMove = false;
+
+  window.addEventListener('pointerdown', (e) => {
+    pointerStartX = e.clientX;
+    pointerStartY = e.clientY;
+    isDragMove = false;
+  }, { capture: true, passive: true });
+
+  window.addEventListener('pointermove', (e) => {
+    if (Math.hypot(e.clientX - pointerStartX, e.clientY - pointerStartY) > 10) {
+      isDragMove = true;
+    }
+  }, { capture: true, passive: true });
+
+  window.addEventListener('click', (e) => {
+    // 1. Clothesline / Rack Showcase items (.sr-item, .rk-item)
+    const rackItem = e.target.closest('.sr-item, .rk-item');
+    if (rackItem) {
+      if (isDragMove) {
+        isDragMove = false;
+        return;
+      }
+      const rawUrl = rackItem.getAttribute('data-btn-url') || rackItem.getAttribute('data-url');
+      const name = rackItem.getAttribute('data-name') || rackItem.getAttribute('aria-label');
+      const targetUrl = resolveProductUrl(rawUrl) || resolveProductUrl(name);
+      if (targetUrl) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        window.location.href = targetUrl;
+        return;
+      }
+    }
+
+    // 2. Rack Showcase Bottom Info (.sr-peek-info, .rk-peek-info)
+    const peek = e.target.closest('.sr-peek-info, .sr-peek-name, .sr-peek-price, .rk-peek-info, [data-sr-pname], [data-rk-pname]');
+    if (peek) {
+      const container = peek.closest('[data-sr-section], [data-rk-section], section') || document;
+      const pName = container.querySelector('[data-sr-pname], [data-rk-pname], .sr-peek-name')?.textContent.trim();
+      const targetUrl = resolveProductUrl(pName);
+      if (targetUrl) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        window.location.href = targetUrl;
+        return;
+      }
+    }
+
+    // 3. 'Shop the Collection' CTA Link
+    const ctaLink = e.target.closest('.sr-cta-link, a[href="/collections/all"]');
+    if (ctaLink) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+      const target = document.querySelector('#so-template--27695055274289__shoe_orbit_WizENf, .so-sec, #shopify-section-template--27695055274289__the_runway_gwqgXR');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      return;
+    }
+
+    // 4. Shoe Orbit (.so-shoe)
+    const soShoe = e.target.closest('.so-shoe');
+    if (soShoe) {
+      if (isDragMove) {
+        isDragMove = false;
+        return;
+      }
+      const rawUrl = soShoe.getAttribute('data-url');
+      const name = soShoe.getAttribute('data-name');
+      const targetUrl = resolveProductUrl(rawUrl) || resolveProductUrl(name);
+      if (targetUrl && (soShoe.classList.contains('so-active') || e.detail >= 2)) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        window.location.href = targetUrl;
+        return;
+      }
+    }
+
+    // 5. Shoe Orbit 'View details' button (.so-view)
+    const soView = e.target.closest('.so-view, [data-so-btn], .so-btn');
+    if (soView) {
+      const activeShoe = document.querySelector('.so-shoe.so-active') || document.querySelector('.so-shoe');
+      if (activeShoe) {
+        const targetUrl = resolveProductUrl(activeShoe.getAttribute('data-url')) || resolveProductUrl(activeShoe.getAttribute('data-name'));
+        if (targetUrl) {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+          window.location.href = targetUrl;
+          return;
+        }
+      }
+    }
+
+    // 6. Runway Look pins (.rw__pin)
+    const rwPin = e.target.closest('.rw__pin');
+    if (rwPin) {
+      const tip = rwPin.getAttribute('data-tip') || rwPin.getAttribute('aria-label');
+      const targetUrl = resolveProductUrl(tip);
+      if (targetUrl) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        window.location.href = targetUrl;
+        return;
+      }
+    }
+  }, { capture: true });
+
+  // Visual cues for clickable products
+  const styleEl = document.createElement('style');
+  styleEl.textContent = `
+    .sr-item, .rk-item, .sr-peek-info, .rk-peek-info, .so-shoe, .rw__pin, .sr-tag, .rk-tag, .so-view {
+      cursor: pointer !important;
+    }
+    .sr-item, .rk-item {
+      transition: filter 0.2s ease, transform 0.2s ease;
+    }
+    .sr-item:hover, .rk-item:hover {
+      filter: drop-shadow(0 12px 24px rgba(0,0,0,0.18)) !important;
+    }
+    .sr-peek-info, .rk-peek-info {
+      cursor: pointer !important;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .sr-peek-info:hover, .rk-peek-info:hover {
+      opacity: 0.7;
+    }
+  `;
+  document.head.appendChild(styleEl);
+
 })();
