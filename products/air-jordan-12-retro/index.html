@@ -2,399 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Air Jordan 12 Retro | Nikey Flagship Store</title>
-  <meta name="description" content="Shop the official Air Jordan 12 Retro at Nikey. Premium luxury streetwear and footwear.">
-  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-  <link rel="alternate icon" href="../../favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Air Jordan 12 Retro – Nikey</title>
   <link rel="stylesheet" href="../../styles.css">
-
-  <style>
-    /* Product Page Specific Styles */
-    body {
-      background: #fbfbfb;
-      color: #111;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .pdp-container {
-      max-width: 1360px;
-      margin: 0 auto;
-      padding: 32px 24px 80px;
-    }
-
-    .pdp-breadcrumb {
-      font-size: 13px;
-      color: #777;
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .pdp-breadcrumb a {
-      color: #777;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .pdp-breadcrumb a:hover {
-      color: #000;
-    }
-
-    .pdp-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 56px;
-      align-items: start;
-    }
-
-    /* Left Gallery */
-    .pdp-gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      position: sticky;
-      top: 100px;
-    }
-
-    .pdp-main-image-wrap {
-      width: 100%;
-      height: 600px;
-      background: #f1f1f1;
-      border-radius: 16px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(0,0,0,0.06);
-    }
-
-    .pdp-main-image {
-      max-width: 90%;
-      max-height: 90%;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-    }
-
-    .pdp-main-image:hover {
-      transform: scale(1.04);
-    }
-
-    .pdp-thumbnails {
-      display: flex;
-      gap: 12px;
-      overflow-x: auto;
-      padding-bottom: 6px;
-    }
-
-    .pdp-thumb {
-      width: 80px;
-      height: 80px;
-      border-radius: 10px;
-      background: #f0f0f0;
-      border: 2px solid transparent;
-      cursor: pointer;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s ease;
-      flex-shrink: 0;
-    }
-
-    .pdp-thumb img {
-      max-width: 85%;
-      max-height: 85%;
-      object-fit: contain;
-    }
-
-    .pdp-thumb.active {
-      border-color: #000;
-      background: #fff;
-    }
-
-    /* Right Details */
-    .pdp-info {
-      padding-top: 8px;
-    }
-
-    .pdp-badge {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #e8552b;
-      margin-bottom: 8px;
-    }
-
-    .pdp-title {
-      font-size: 36px;
-      font-weight: 900;
-      letter-spacing: -1px;
-      text-transform: uppercase;
-      margin: 0 0 12px;
-      color: #111;
-      line-height: 1.1;
-    }
-
-    .pdp-price {
-      font-size: 24px;
-      font-weight: 700;
-      color: #111;
-      margin-bottom: 6px;
-    }
-
-    .pdp-tax-note {
-      font-size: 13px;
-      color: #666;
-      margin-bottom: 24px;
-    }
-
-    /* Size Selector */
-    .pdp-section-label {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 12px;
-      color: #222;
-    }
-
-    .pdp-size-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-      gap: 10px;
-      margin-bottom: 28px;
-    }
-
-    .pdp-size-btn {
-      padding: 14px 10px;
-      background: #fff;
-      border: 1px solid #d2d2d2;
-      border-radius: 12px;
-      font-size: 14px;
-      font-weight: 700;
-      cursor: pointer;
-      text-align: center;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .pdp-size-btn:hover {
-      border-color: #000;
-    }
-
-    .pdp-size-btn.active {
-      background: #000;
-      color: #fff;
-      border-color: #000;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    /* Actions */
-    .pdp-actions {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-bottom: 32px;
-    }
-
-    .pdp-add-btn {
-      width: 100%;
-      background: #000;
-      color: #fff;
-      border: none;
-      border-radius: 35px;
-      padding: 18px;
-      font-size: 15px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.25);
-      transition: transform 0.15s, opacity 0.15s;
-    }
-
-    .pdp-add-btn:hover {
-      transform: translateY(-2px);
-      opacity: 0.95;
-    }
-
-    .pdp-buy-now {
-      width: 100%;
-      background: #e8552b;
-      color: #fff;
-      border: none;
-      border-radius: 35px;
-      padding: 16px;
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      cursor: pointer;
-      transition: opacity 0.2s;
-    }
-
-    .pdp-buy-now:hover {
-      opacity: 0.9;
-    }
-
-    /* Guarantees Box */
-    .pdp-perks {
-      background: #f3f3f3;
-      border-radius: 14px;
-      padding: 18px 20px;
-      margin-bottom: 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      font-size: 13px;
-      color: #444;
-    }
-
-    .pdp-perk-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    /* Description Tabs */
-    .pdp-desc {
-      border-top: 1px solid #e0e0e0;
-      padding-top: 24px;
-      color: #444;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    .pdp-desc h4 {
-      font-size: 15px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: #111;
-      margin: 0 0 12px;
-    }
-
-    /* Related Grid */
-    .pdp-related {
-      margin-top: 80px;
-      border-top: 1px solid #e5e5e5;
-      padding-top: 48px;
-    }
-
-    .pdp-related-heading {
-      font-size: 22px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: -0.5px;
-      margin-bottom: 24px;
-    }
-
-    .pdp-related-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 24px;
-    }
-
-    .pdp-card {
-      background: #fff;
-      border: 1px solid #e8e8e8;
-      border-radius: 16px;
-      overflow: hidden;
-      text-decoration: none;
-      color: #111;
-      transition: transform 0.2s, box-shadow 0.2s;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .pdp-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.06);
-    }
-
-    .pdp-card-img-wrap {
-      height: 220px;
-      background: #f7f7f7;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
-    }
-
-    .pdp-card-img-wrap img {
-      max-width: 90%;
-      max-height: 90%;
-      object-fit: contain;
-    }
-
-    .pdp-card-content {
-      padding: 16px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    @media (max-width: 990px) {
-      .pdp-grid {
-        grid-template-columns: 1fr;
-        gap: 36px;
-      }
-      .pdp-gallery {
-        position: static;
-      }
-      .pdp-main-image-wrap {
-        height: 420px;
-      }
-    }
-  </style>
+  <script src="../../storefront-enhancements.js" defer></script>
 </head>
 <body>
+  <!-- Top Utility Bar (Desktop Only) -->
+  <div class="section-utility-bar utility-bar" style="border-bottom: 1px solid rgba(0,0,0,0.06); background: #ffffff;">
+    <div class="page-width utility-bar__grid" style="display: flex; justify-content: flex-end; padding: 8px 36px;">
+      <nav class="top-info-bar__right" aria-label="Top info links" style="font-size: 12px; color: #111;">
+        <ul class="top-info-bar__links" role="list" style="display: flex; gap: 14px; list-style: none; margin: 0; padding: 0;">
+          <li class="top-info-bar__item"><span class="top-info-bar__link">Find a Store</span></li>
+          <li style="color: #ccc;">|</li>
+          <li class="top-info-bar__item"><span class="top-info-bar__link">Help</span></li>
+          <li style="color: #ccc;">|</li>
+          <li class="top-info-bar__item"><span class="top-info-bar__link">Join Us</span></li>
+          <li style="color: #ccc;">|</li>
+          <li class="top-info-bar__item"><span class="top-info-bar__link">Sign In</span></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-  <!-- Sticky Luxury Header -->
-  <header class="header-section">
-    <div class="header__columns">
-      <div class="header__column header__column--left">
-        <a href="/" class="nikey-brand-logo" aria-label="Nikey Home" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #111;">
-          <img src="../../assets/images/asset_001_3d739eac02ba.svg" alt="Nikey" style="height: 22px; width: auto; object-fit: contain;">
-          <span style="font-size: 19px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase;">NIKEY</span>
+  <!-- Header Section (Matching Shopify Desktop & Mobile) -->
+  <header class="header-section" style="position: sticky; top: 0; z-index: 1000; background: #ffffff; border-bottom: 1px solid rgba(0,0,0,0.06);">
+    <div class="header__columns" style="display: flex; align-items: center; justify-content: space-between; height: 68px; padding: 0 36px; max-width: 1440px; margin: 0 auto; box-sizing: border-box;">
+      <div class="header__column header__column--left" style="display: flex; align-items: center;">
+        <a href="/" class="nikey-brand-logo" aria-label="Nike Home" style="display: inline-flex; align-items: center;">
+          <img src="../../assets/images/asset_001_3d739eac02ba.svg" alt="Nike" style="height: 24px; width: auto; object-fit: contain;">
         </a>
       </div>
 
       <div class="header__column header__column--center">
-        <nav class="menu-list">
+        <nav class="menu-list" style="display: flex; gap: 28px; list-style: none; margin: 0; padding: 0;">
           <a class="menu-list__link" href="/">Home</a>
           <a class="menu-list__link" href="/#so-template--27695055274289__shoe_orbit_WizENf">Nike Orbit</a>
-          <a class="menu-list__link" href="/#sr-template--27695055274289__scene_rail_redGmm">Hand Rail Pro</a>
+          <a class="menu-list__link" href="/#rk-template--27695055274289__rack_showcase_rWz8Dr">Hand Rail Pro</a>
           <a class="menu-list__link" href="/#shopify-section-template--27695055274289__the_runway_gwqgXR">Runway</a>
         </nav>
       </div>
 
-      <div class="header__column header__column--right">
-        <header-actions class="header-actions">
+      <div class="header__column header__column--right" style="display: flex; align-items: center; gap: 16px;">
+        <header-actions class="header-actions" style="display: flex; align-items: center; gap: 16px;">
           <button type="button" class="search-pill-button" onclick="location.href='/?search=1'">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             <span class="search-pill-label">Search</span>
           </button>
 
-          <cart-icon class="header-actions__cart-icon" style="position: relative; cursor: pointer;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"/></svg>
-            <div class="cart-bubble visually-hidden" style="position: absolute; top: 0; right: 0; background: #000; color: #fff; font-size: 10px; font-weight: bold; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center;">
-              <span class="cart-bubble__text-count hidden">0</span>
+          <div class="account-button header-actions__account-icon" onclick="alert('Account');" style="cursor: pointer; display: flex; align-items: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 15 17" fill="none">
+              <path stroke="currentColor" stroke-linejoin="round" stroke-width="1.6" d="M10.375 3.813a3.063 3.063 0 1 1-6.125 0 3.063 3.063 0 0 1 6.125 0ZM7.313 9.5c-3.667 0-6.24 2.691-6.563 6.125h13.125C13.552 12.191 10.979 9.5 7.312 9.5Z"></path>
+            </svg>
+          </div>
+
+          <cart-icon class="header-actions__cart-icon" style="position: relative; cursor: pointer; display: flex; align-items: center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"/></svg>
+            <div class="cart-bubble visually-hidden" id="pdp-cart-bubble" style="position: absolute; top: -4px; right: -6px; background: #000; color: #fff; font-size: 10px; font-weight: bold; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center;">
+              <span class="cart-bubble__text-count hidden" id="pdp-cart-count">0</span>
             </div>
           </cart-icon>
         </header-actions>
@@ -402,12 +67,35 @@
     </div>
   </header>
 
-  <!-- Product Main Section -->
+  <!-- Mobile Drawer Menu Overlay -->
+  <div id="pdpMobileNavDrawer" class="mobile-nav-drawer" style="display: none; position: fixed; inset: 0; z-index: 99999;">
+    <div class="mobile-nav-backdrop" onclick="toggleMobileNav(false)" style="position: absolute; inset: 0; background: rgba(0,0,0,0.5);"></div>
+    <div class="mobile-nav-panel" style="position: absolute; top: 0; right: 0; width: 300px; height: 100%; background: #ffffff; padding: 28px 24px; box-shadow: -4px 0 24px rgba(0,0,0,0.15); display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+      <div>
+        <div style="display: flex; justify-content: flex-end; margin-bottom: 32px;">
+          <button type="button" onclick="toggleMobileNav(false)" style="background: none; border: none; font-size: 26px; cursor: pointer; color: #111;">&times;</button>
+        </div>
+        <nav style="display: flex; flex-direction: column; gap: 20px; font-size: 18px; font-weight: 600;">
+          <a href="/" style="color: #111; text-decoration: none;">Home</a>
+          <a href="/#so-template--27695055274289__shoe_orbit_WizENf" style="color: #111; text-decoration: none;">Nike Orbit</a>
+          <a href="/#rk-template--27695055274289__rack_showcase_rWz8Dr" style="color: #111; text-decoration: none;">Hand Rail Pro</a>
+          <a href="/#shopify-section-template--27695055274289__the_runway_gwqgXR" style="color: #111; text-decoration: none;">Runway</a>
+        </nav>
+      </div>
+      <div style="border-top: 1px solid #eee; padding-top: 20px; font-size: 14px; color: #666; display: flex; flex-direction: column; gap: 12px;">
+        <span onclick="alert('Account')">My Account</span>
+        <span>Find a Store</span>
+        <span>Help & FAQ</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Product Detail Layout -->
   <main class="pdp-container">
-    <div class="pdp-breadcrumb">
-      <a href="/">Home</a>
+    <div class="pdp-breadcrumb" style="font-size: 13px; color: #707072; margin-bottom: 24px; display: flex; align-items: center; gap: 8px;">
+      <a href="/" style="color: #707072; text-decoration: none;">Home</a>
       <span>/</span>
-      <a href="/">Footwear</a>
+      <a href="/" style="color: #707072; text-decoration: none;">Footwear</a>
       <span>/</span>
       <span style="color: #111; font-weight: 600;">Air Jordan 12 Retro</span>
     </div>
@@ -415,87 +103,93 @@
     <div class="pdp-grid">
       <!-- Gallery Column -->
       <div class="pdp-gallery">
-        <div class="pdp-main-image-wrap">
-          <img id="pdp-main-img" class="pdp-main-image" src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528" alt="Air Jordan 12 Retro">
+        <!-- Desktop 2-Column Image Grid -->
+        <div class="pdp-desktop-gallery-grid">
+          
+            <div class="pdp-gallery-card">
+              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528" alt="Air Jordan 12 Retro" loading="eager">
+            </div>
+          
+            <div class="pdp-gallery-card">
+              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/7.png?v=1792493527" alt="Air Jordan 12 Retro" loading="eager">
+            </div>
+          
+            <div class="pdp-gallery-card">
+              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/8.png?v=1792493527" alt="Air Jordan 12 Retro" loading="eager">
+            </div>
+          
+            <div class="pdp-gallery-card">
+              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/9.png?v=1792493528" alt="Air Jordan 12 Retro" loading="eager">
+            </div>
+          
         </div>
 
-        
-        <div class="pdp-thumbnails">
-          
-            <div class="pdp-thumb active" onclick="switchPdpImage('https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528', this)">
-              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528" alt="Air Jordan 12 Retro view 1">
+        <!-- Mobile Carousel View (Single hero image with dot indicators matching Shopify) -->
+        <div class="pdp-mobile-gallery">
+          <div class="pdp-main-image-wrap">
+            <img id="pdp-main-img" class="pdp-main-image" src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528" alt="Air Jordan 12 Retro">
+            <div class="pdp-mobile-dots">
+              
+                <button type="button" class="pdp-dot active" onclick="switchPdpImage('https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528', this)" aria-label="Slide 1"></button>
+              
+                <button type="button" class="pdp-dot" onclick="switchPdpImage('https://cdn.shopify.com/s/files/1/1008/9057/5153/files/7.png?v=1792493527', this)" aria-label="Slide 2"></button>
+              
+                <button type="button" class="pdp-dot" onclick="switchPdpImage('https://cdn.shopify.com/s/files/1/1008/9057/5153/files/8.png?v=1792493527', this)" aria-label="Slide 3"></button>
+              
+                <button type="button" class="pdp-dot" onclick="switchPdpImage('https://cdn.shopify.com/s/files/1/1008/9057/5153/files/9.png?v=1792493528', this)" aria-label="Slide 4"></button>
+              
             </div>
-          
-            <div class="pdp-thumb " onclick="switchPdpImage('https://cdn.shopify.com/s/files/1/1008/9057/5153/files/7.png?v=1792493527', this)">
-              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/7.png?v=1792493527" alt="Air Jordan 12 Retro view 2">
-            </div>
-          
-            <div class="pdp-thumb " onclick="switchPdpImage('https://cdn.shopify.com/s/files/1/1008/9057/5153/files/8.png?v=1792493527', this)">
-              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/8.png?v=1792493527" alt="Air Jordan 12 Retro view 3">
-            </div>
-          
-            <div class="pdp-thumb " onclick="switchPdpImage('https://cdn.shopify.com/s/files/1/1008/9057/5153/files/9.png?v=1792493528', this)">
-              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/9.png?v=1792493528" alt="Air Jordan 12 Retro view 4">
-            </div>
-          
+          </div>
         </div>
-        
       </div>
 
-      <!-- Details Column -->
+      <!-- Product Details Column (Right, Sticky) -->
       <div class="pdp-info">
-        <div class="pdp-badge">Official Nikey Release</div>
         <h1 class="pdp-title">Air Jordan 12 Retro</h1>
         <div class="pdp-price">$149.00</div>
-        <div class="pdp-tax-note">Tax included. Free express shipping on all orders.</div>
+        <hr class="pdp-divider">
 
         <!-- Size Selection -->
-        <div class="pdp-section-label">
-          <span>Select Size: <strong id="selected-size-label">9</strong></span>
-          <span style="color: #777; cursor: pointer; text-decoration: underline; font-weight: 500;">Size Guide</span>
+        <div class="pdp-size-label-row">
+          <span>Size: <strong id="selected-size-label">9</strong></span>
         </div>
         <div class="pdp-size-grid">
+          
             <button type="button" class="pdp-size-btn" onclick="selectPdpSize('8', this)">8</button>
+          
             <button type="button" class="pdp-size-btn active" onclick="selectPdpSize('9', this)">9</button>
+          
             <button type="button" class="pdp-size-btn" onclick="selectPdpSize('10', this)">10</button>
+          
             <button type="button" class="pdp-size-btn" onclick="selectPdpSize('11', this)">11</button>
+          
         </div>
 
-        <!-- Action CTAs -->
-        <div class="pdp-actions">
+        <!-- Find Your Size Link -->
+        <div class="pdp-find-size" onclick="openSizeGuideModal()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"></rect><line x1="6" y1="6" x2="6" y2="10"></line><line x1="10" y1="6" x2="10" y2="12"></line><line x1="14" y1="6" x2="14" y2="10"></line><line x1="18" y1="6" x2="18" y2="12"></line></svg>
+          <span>FIND YOUR SIZE</span>
+        </div>
+
+        <!-- Add to Bag Row (Qty + Add to cart) -->
+        <div class="pdp-actions-row">
+          <div class="pdp-qty-stepper">
+            <button type="button" class="pdp-qty-btn" onclick="changeQty(-1)">−</button>
+            <span class="pdp-qty-val" id="pdp-qty-val">1</span>
+            <button type="button" class="pdp-qty-btn" onclick="changeQty(1)">+</button>
+          </div>
           <button type="button" class="pdp-add-btn" id="pdp-add-to-cart-btn" onclick="addCurrentProductToBag()">
-            <span>Add to Bag • $149.00</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </button>
-          <button type="button" class="pdp-buy-now" onclick="buyNowCurrentProduct()">
-            Instant Checkout
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg>
+            <span>Add to cart</span>
           </button>
         </div>
 
-        <!-- Value Perks -->
-        <div class="pdp-perks">
-          <div class="pdp-perk-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span><strong>100% Authentic</strong> Guaranteed directly from Nikey</span>
-          </div>
-          <div class="pdp-perk-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2.5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-            <span><strong>Complimentary Express Delivery</strong> (2-4 business days)</span>
-          </div>
-          <div class="pdp-perk-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2.5"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
-            <span><strong>30-Day Hassle-Free Returns</strong> and exchanges</span>
-          </div>
-        </div>
+        <!-- Buy Now CTA -->
+        <button type="button" class="pdp-buy-now" onclick="buyNowCurrentProduct()">
+          Buy it now
+        </button>
 
-        <!-- Description Accordion -->
-        
-        <!-- Description & Accordions -->
-        <div class="pdp-desc">
-          <h4>Design & Craftsmanship</h4>
-          <p>The legendary silhouette features full-length Zoom Air cushioning, carbon fiber shank plate, and premium textured leather upper for iconic style and on-court performance.</p>
-        </div>
-
+        <!-- Description Accordion & Shop Policy Accordions -->
         <div class="pdp-accordion-group">
           <details class="pdp-accordion-item" open>
             <summary class="pdp-accordion-header">
@@ -526,56 +220,62 @@
               Crafted with premium high-density technical fabrics and engineered for all-day comfort and long-lasting durability. Responsibly produced with ethical manufacturing standards.
             </div>
           </details>
+
+          <details class="pdp-accordion-item">
+            <summary class="pdp-accordion-header">
+              <span>Design & Craftsmanship</span>
+              <span class="pdp-accordion-icon"></span>
+            </summary>
+            <div class="pdp-accordion-body">
+              The legendary silhouette features full-length Zoom Air cushioning, carbon fiber shank plate, and premium textured leather upper for iconic style and on-court performance.
+            </div>
+          </details>
         </div>
       </div>
     </div>
 
-    <!-- Related Products -->
+    <!-- You May Also Like Recommendations Grid (4-Columns Desktop, 2-Columns Mobile) -->
     <div class="pdp-related">
-      <div class="pdp-related-heading">Complete The Look</div>
+      <h2 class="pdp-related-heading">You may also like</h2>
       <div class="pdp-related-grid">
         
-          <a class="pdp-card" href="/products/air-jordan-12-retro-copy">
+          <a class="pdp-card" href="/products/luka-5">
             <div class="pdp-card-img-wrap">
-              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/4.png?v=1792493527" alt="Luka 5">
+              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/4.png?v=1792493527" alt="Luka 5" loading="lazy">
             </div>
             <div class="pdp-card-content">
-              <div style="font-size: 11px; font-weight: 800; color: #777; text-transform: uppercase;">Nikey Collection</div>
-              <div style="font-size: 15px; font-weight: 800; text-transform: uppercase; margin: 4px 0;">Luka 5</div>
-              <div style="font-size: 14px; font-weight: 700; color: #111;">$149.00</div>
+              <div class="pdp-card-title">Luka 5</div>
+              <div class="pdp-card-price">$149.00</div>
             </div>
           </a>
         
           <a class="pdp-card" href="/products/tatum-5-orbit">
             <div class="pdp-card-img-wrap">
-              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/1.png?v=1792493527" alt="Tatum 5 Orbit">
+              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/1.png?v=1792493527" alt="Tatum 5 Orbit" loading="lazy">
             </div>
             <div class="pdp-card-content">
-              <div style="font-size: 11px; font-weight: 800; color: #777; text-transform: uppercase;">Nikey Collection</div>
-              <div style="font-size: 15px; font-weight: 800; text-transform: uppercase; margin: 4px 0;">Tatum 5 Orbit</div>
-              <div style="font-size: 14px; font-weight: 700; color: #111;">$149.00</div>
+              <div class="pdp-card-title">Tatum 5 Orbit</div>
+              <div class="pdp-card-price">$149.00</div>
             </div>
           </a>
         
           <a class="pdp-card" href="/products/hoodie-black">
             <div class="pdp-card-img-wrap">
-              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071101472773.webp?v=1792065527" alt="Hoodie Black">
+              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071101472773.webp?v=1792065527" alt="Hoodie Black" loading="lazy">
             </div>
             <div class="pdp-card-content">
-              <div style="font-size: 11px; font-weight: 800; color: #777; text-transform: uppercase;">Nikey Collection</div>
-              <div style="font-size: 15px; font-weight: 800; text-transform: uppercase; margin: 4px 0;">Hoodie Black</div>
-              <div style="font-size: 14px; font-weight: 700; color: #111;">$199.00</div>
+              <div class="pdp-card-title">Hoodie Black</div>
+              <div class="pdp-card-price">$199.00</div>
             </div>
           </a>
         
-          <a class="pdp-card" href="/products/sweatshirt-plus">
+          <a class="pdp-card" href="/products/sweatshirt">
             <div class="pdp-card-img-wrap">
-              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071516592552.webp?v=1792065999" alt="Sweatshirt Plus">
+              <img src="https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2610071517318112.webp?v=1792066085" alt="Sweatshirt" loading="lazy">
             </div>
             <div class="pdp-card-content">
-              <div style="font-size: 11px; font-weight: 800; color: #777; text-transform: uppercase;">Nikey Collection</div>
-              <div style="font-size: 15px; font-weight: 800; text-transform: uppercase; margin: 4px 0;">Sweatshirt Plus</div>
-              <div style="font-size: 14px; font-weight: 700; color: #111;">$199.00</div>
+              <div class="pdp-card-title">Sweatshirt</div>
+              <div class="pdp-card-price">$199.00</div>
             </div>
           </a>
         
@@ -583,94 +283,135 @@
     </div>
   </main>
 
-  <!-- Bag Drawer Component -->
-  <theme-drawer id="cart-drawer">
-    <dialog class="theme-drawer__dialog color-custom-drawer" ref="panel" style="position: fixed; top: 0; right: 0; bottom: 0; width: 440px; max-width: 90vw; background: #fff; box-shadow: -10px 0 30px rgba(0,0,0,0.15); border: none; padding: 0; z-index: 9999;">
-      <div class="cart-drawer__inner" style="display: flex; flex-direction: column; height: 100%;">
-        <div class="theme-drawer__header" style="display: flex; justify-content: flex-end; padding: 16px 20px;">
-          <button aria-label="Close" class="theme-drawer__close-button" style="background: none; border: none; cursor: pointer; padding: 8px;" onclick="closeCartDrawer()">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
+  <!-- Interactive Find Your Size Modal -->
+  <div id="sizeGuideModal" class="size-modal-backdrop" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:99999; align-items:center; justify-content:center; backdrop-filter:blur(4px);">
+    <div style="background:#fff; width:90%; max-width:440px; border-radius:12px; padding:28px 24px; box-shadow:0 20px 60px rgba(0,0,0,0.2); position:relative;">
+      <button type="button" onclick="closeSizeGuideModal()" style="position:absolute; top:18px; right:18px; background:none; border:none; font-size:22px; cursor:pointer; color:#111;">&times;</button>
+      <h3 style="margin:0 0 8px; font-size:20px; font-weight:700;">Find Your Size</h3>
+      <p style="color:#666; font-size:13.5px; margin:0 0 20px;">Personalized sizing recommendation based on true-to-size streetwear specs.</p>
+      <div style="margin-bottom:16px;">
+        <label style="display:block; font-size:12.5px; font-weight:600; text-transform:uppercase; margin-bottom:6px;">Preferred Fit</label>
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px;">
+          <button type="button" class="pdp-fit-btn" onclick="selectFitPreference(this, 'S')" style="padding:10px; border:1px solid #ddd; border-radius:4px; background:#fff; cursor:pointer; font-size:13px;">Slim</button>
+          <button type="button" class="pdp-fit-btn" onclick="selectFitPreference(this, 'M')" style="padding:10px; border:1px solid #000; border-radius:4px; background:#000; color:#fff; cursor:pointer; font-size:13px; font-weight:600;">Regular</button>
+          <button type="button" class="pdp-fit-btn" onclick="selectFitPreference(this, 'L')" style="padding:10px; border:1px solid #ddd; border-radius:4px; background:#fff; cursor:pointer; font-size:13px;">Oversized</button>
         </div>
-        <cart-items-component class="cart-items-component" style="flex: 1; overflow-y: auto;">
-          <!-- Rendered by storefront-enhancements.js -->
-        </cart-items-component>
       </div>
-    </dialog>
-  </theme-drawer>
+      <button type="button" onclick="applyRecommendedSize()" style="width:100%; height:46px; background:#000; color:#fff; border:none; border-radius:4px; font-weight:700; cursor:pointer; margin-top:12px;">Apply Recommended Size</button>
+    </div>
+  </div>
 
-  <!-- Luxury Editorial Footer -->
-  <footer class="nikey-luxury-footer">
-    <div style="max-width: 1400px; margin: 0 auto;">
-      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 48px; gap: 24px;">
-        <div>
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-            <img src="../../assets/images/asset_001_3d739eac02ba.svg" alt="Nikey" style="height: 28px; width: auto; filter: invert(1);">
-            <span style="font-size: 26px; font-weight: 900; letter-spacing: 3px; color: #fff;">NIKEY</span>
-          </div>
-          <p style="margin: 0; color: #888; font-size: 14px; max-width: 440px; line-height: 1.6;">
-            Re-imagining performance streetwear through physical kinetic design, 3D product orbits, and raw technical tailoring.
-          </p>
-        </div>
+  <!-- Global Footer -->
+  <footer style="background: #111111; color: #ffffff; padding: 48px 36px 36px; margin-top: 80px;">
+    <div style="max-width: 1360px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 32px;">
+      <a href="/" style="display: inline-flex; align-items: center;">
+        <img src="../../assets/images/asset_001_3d739eac02ba.svg" alt="Nike" style="height: 24px; width: auto; filter: invert(1);">
+      </a>
+      <div style="display: flex; gap: 28px; font-size: 13px; color: #aaaaaa;">
+        <a href="/" style="color: #aaa; text-decoration: none;">Home</a>
+        <a href="/#so-template--27695055274289__shoe_orbit_WizENf" style="color: #aaa; text-decoration: none;">Nike Orbit</a>
+        <a href="/#rk-template--27695055274289__rack_showcase_rWz8Dr" style="color: #aaa; text-decoration: none;">Hand Rail Pro</a>
+        <a href="/#shopify-section-template--27695055274289__the_runway_gwqgXR" style="color: #aaa; text-decoration: none;">Runway</a>
       </div>
-      <div style="display: flex; justify-content: space-between; font-size: 12px; color: #666;">
-        <div>&copy; 2026 NIKEY Concept Flagship. All rights reserved.</div>
-        <div style="display: flex; gap: 20px;">
-          <a href="/" style="color: #666;">Home</a>
-          <a href="/#so-template--27695055274289__shoe_orbit_WizENf" style="color: #666;">Shoe Orbit</a>
-          <a href="/#shopify-section-template--27695055274289__the_runway_gwqgXR" style="color: #666;">Runway</a>
-        </div>
-      </div>
+    </div>
+    <div style="max-width: 1360px; margin: 24px auto 0; font-size: 12px; color: #666; display: flex; justify-content: space-between; align-items: center;">
+      <div>&copy; 2026 Nikey. All rights reserved.</div>
+      <div>United States (USD $)</div>
     </div>
   </footer>
 
-  <script src="../../storefront-enhancements.js"></script>
+  <!-- PDP Client-side Controller -->
   <script>
-    let currentSelectedSize = '42';
-    const productInfo = {
-      id: 10893258457393,
-      product_id: 10893258457393,
-      title: 'Air Jordan 12 Retro',
-      price: 149.00,
-      image: 'https://cdn.shopify.com/s/files/1/1008/9057/5153/files/2.png?v=1792493528'
-    };
+    let currentQty = 1;
+    let currentSize = '9';
+    let recommendedSize = '9';
 
-    function switchPdpImage(src, el) {
-      document.getElementById('pdp-main-img').src = src;
-      document.querySelectorAll('.pdp-thumb').forEach(t => t.classList.remove('active'));
-      el.classList.add('active');
+    function changeQty(delta) {
+      currentQty = Math.max(1, currentQty + delta);
+      document.getElementById('pdp-qty-val').innerText = currentQty;
     }
 
-    function selectPdpSize(s, el) {
-      currentSelectedSize = s;
-      document.getElementById('selected-size-label').textContent = s;
+    function selectPdpSize(size, btn) {
+      currentSize = size;
+      document.getElementById('selected-size-label').innerText = size;
       document.querySelectorAll('.pdp-size-btn').forEach(b => b.classList.remove('active'));
-      el.classList.add('active');
+      if (btn) btn.classList.add('active');
+    }
+
+    function switchPdpImage(src, dot) {
+      const mainImg = document.getElementById('pdp-main-img');
+      if (mainImg) mainImg.src = src;
+      document.querySelectorAll('.pdp-dot').forEach(d => d.classList.remove('active'));
+      if (dot) dot.classList.add('active');
+    }
+
+    function toggleMobileNav(open) {
+      const drawer = document.getElementById('pdpMobileNavDrawer');
+      if (drawer) {
+        drawer.style.display = open ? 'block' : 'none';
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+    }
+
+    function openSizeGuideModal() {
+      const modal = document.getElementById('sizeGuideModal');
+      if (modal) modal.style.display = 'flex';
+    }
+
+    function closeSizeGuideModal() {
+      const modal = document.getElementById('sizeGuideModal');
+      if (modal) modal.style.display = 'none';
+    }
+
+    function selectFitPreference(btn, size) {
+      recommendedSize = size;
+      document.querySelectorAll('.pdp-fit-btn').forEach(b => {
+        b.style.background = '#fff';
+        b.style.color = '#111';
+        b.style.borderColor = '#ddd';
+        b.style.fontWeight = 'normal';
+      });
+      btn.style.background = '#000';
+      btn.style.color = '#fff';
+      btn.style.borderColor = '#000';
+      btn.style.fontWeight = '600';
+    }
+
+    function applyRecommendedSize() {
+      const sizeBtns = document.querySelectorAll('.pdp-size-btn');
+      sizeBtns.forEach(b => {
+        if (b.innerText.trim() === recommendedSize) {
+          selectPdpSize(recommendedSize, b);
+        }
+      });
+      closeSizeGuideModal();
     }
 
     function addCurrentProductToBag() {
-      if (typeof window.fetch === 'function') {
-        fetch('/cart/add.js', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            id: productInfo.id,
-            title: productInfo.title,
-            variant_title: currentSelectedSize,
-            price: productInfo.price,
-            quantity: 1,
-            image: productInfo.image
-          })
-        });
+      const bubble = document.getElementById('pdp-cart-bubble');
+      const countEl = document.getElementById('pdp-cart-count');
+      if (bubble && countEl) {
+        let count = parseInt(countEl.innerText) || 0;
+        count += currentQty;
+        countEl.innerText = count;
+        countEl.classList.remove('hidden');
+        bubble.classList.remove('visually-hidden');
+      }
+      const btn = document.getElementById('pdp-add-to-cart-btn');
+      if (btn) {
+        const origText = btn.innerHTML;
+        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Added to bag!</span>';
+        btn.style.background = '#2e7d32';
+        setTimeout(() => {
+          btn.innerHTML = origText;
+          btn.style.background = '#000000';
+        }, 1600);
       }
     }
 
     function buyNowCurrentProduct() {
       addCurrentProductToBag();
-      setTimeout(() => {
-        const checkoutBtn = document.getElementById('nikey-checkout-btn');
-        if (checkoutBtn) checkoutBtn.click();
-      }, 300);
+      alert('Proceeding to Checkout for ' + currentQty + 'x Air Jordan 12 Retro (Size ' + currentSize + ')');
     }
   </script>
 </body>
